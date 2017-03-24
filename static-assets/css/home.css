@@ -114,6 +114,10 @@ a:hover {
   text-align: center;
 }
 
+#page-view .story-container h2 {
+  padding-top: 20px;
+}
+
 #page-view h1 {
   font-size: 2.8em;
   line-height: 1.1em;
@@ -122,7 +126,6 @@ a:hover {
 }
 
 #page-view h2 {
-  padding-top: 20px;
   font-size: 1.1em;
   line-height: 1.4em;
   text-transform: uppercase;
@@ -142,10 +145,11 @@ a:hover {
 }
 
 #page-view .project {
-  padding: 94px 0 82px 0;
+  padding: 82px 0 62px 0;
 }
 
 #page-view .project-container {
+  position: relative;
   padding: 0 16px;
 }
 
@@ -154,14 +158,68 @@ a:hover {
 }
 
 #page-view .project .synopsis {
-  float: left;
-  width: 344px;
-  padding: 48px 48px 48px 0;
+  padding: 26px 10px 26px 10px;
+}
+
+#page-view .project .synopsis h1 {
+  font-size: 2em;
+}
+
+#page-view .project .synopsis h2 {
+  padding-top: 10px;
+}
+
+#page-view .project .overview {
+  padding-top: 8px;
+}
+
+#page-view .project .project-link {
+  padding-top: 18px;
+}
+
+#page-view .project .highlight {
+  padding-left: 6px;
 }
 
 #page-view .project .grab {
-  float: left;
-  margin-top: -48px; 
+  margin-top: -48px;
+  width: 100%;
+  text-align: center;
+}
+#page-view .project .grab.portrait {
+  margin-top: -98px;
+}
+
+#page-view .project .grab img {
+  width: 286px;
+  margin: 0 auto;
+}
+
+#page-view .platform {
+  padding: 0 0 62px 0;
+  text-align: center;
+}
+
+#page-view .platform-container {
+  position: relative;
+  padding: 0 16px;
+}
+
+#page-view .platform h2 {
+  padding-top: 10px;
+}
+
+#page-view .platform .overview {
+  padding-top: 8px;
+}
+
+/* FOOTER VIEW */
+/******************************************/
+#footer-view {
+  background: #091e29;
+  height: 68px;
+  padding: 28px 0 0 28px;
+  color: #FFF;
 }
 
 /* IMGS */
@@ -197,7 +255,7 @@ img.scale {
     padding: 60px 0 60px 0;
   }
 
-  #page-view h2 {
+  #page-view .story-container h2 {
     padding-top: 10px;
   }
 }
@@ -220,8 +278,47 @@ img.scale {
     padding: 0 120px;
   }
 
+  #page-view .project {
+    padding: 62px 0 122px 0;
+  }
+
   #page-view .project-container {
     margin: 0 auto;
-    width: 960px;
+    padding: 0;
+    width: 992px;
+  }
+
+  #page-view .project .synopsis {
+    float: left;
+    width: 428px;
+    padding: 48px 88px 48px 48px;
+  }
+
+  #page-view .project .synopsis h1 {
+    font-size: 2.8em;
+  }
+
+  #page-view .project .grab {
+    width: initial;
+    text-align: left;
+  }
+
+  #page-view .project .grab img {
+    width: initial;
+    margin: 0;
+  }
+
+  #page-view .platform {
+    padding: 0px 0 82px 0;
+  }
+
+  #page-view .platform-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 540px;
+  }
+
+  #page-view .platform h1 {
+    padding: 0 20px;
   }
 }
