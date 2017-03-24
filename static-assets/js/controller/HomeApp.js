@@ -16,6 +16,12 @@ define([
   var initialize = function() {
     var self = this;
 
+    $(".linkref").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+      }, 1000);
+    });
+
     $('img.scale').imageScale({
       'rescaleOnResize': true
     });

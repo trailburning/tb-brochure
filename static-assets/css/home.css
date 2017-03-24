@@ -19,11 +19,16 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-a {
+.linkref, a {
   color: inherit;
   text-decoration: underline;
 }
 
+.linkref:hover {
+  cursor: pointer;
+}
+
+.linkref:hover, 
 a:hover,
 a:active,
 a:visited {
@@ -185,11 +190,10 @@ a:visited {
 
 #page-view .project .grab {
   margin-top: -48px;
-  width: 100%;
   text-align: center;
 }
 #page-view .project .grab.portrait {
-  margin-top: -98px;
+  margin-top: -88px;
 }
 
 #page-view .project .grab img {
@@ -219,9 +223,6 @@ a:visited {
   padding: 68px 0 86px 0;
   text-align: center;
   color: #FFF;
-/*  
-  background: #132e3c;
-*/  
   background-color: #0b212c;
   background-image: url("../../static-assets/images/contours.jpg");
   background-repeat: no-repeat;
@@ -328,11 +329,13 @@ img.scale {
   }
 
   #page-view .project .grab {
-    width: initial;
     text-align: left;
+    width: 563px;
+    height: 340px;
   }
 
   #page-view .project .grab img {
+    position: absolute;
     width: initial;
     margin: 0;
   }
