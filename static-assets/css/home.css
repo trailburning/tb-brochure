@@ -24,7 +24,9 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:visited {
   color: inherit;
   text-decoration: none;
 }
@@ -106,7 +108,7 @@ a:hover {
 /* PAGE VIEW */
 /******************************************/
 #page-view {
-  padding: 60px 0 60px 0;
+  padding-top: 60px;
 }
 
 #page-view .story-container {
@@ -213,6 +215,37 @@ a:hover {
   padding-top: 8px;
 }
 
+#page-view .contact {
+  padding: 68px 0 86px 0;
+  text-align: center;
+  color: #FFF;
+/*  
+  background: #132e3c;
+*/  
+  background-color: #0b212c;
+  background-image: url("../../static-assets/images/contours.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#page-view .contact-container {
+  position: relative;
+  padding: 0 16px;
+}
+
+#page-view .contact h1, 
+#page-view .contact h2 {
+  color: #FFF;
+}
+
+#page-view .contact h2 {
+  padding-top: 10px;
+}
+
+#page-view .contact .overview {
+  padding-top: 8px;
+}
+
 /* FOOTER VIEW */
 /******************************************/
 #footer-view {
@@ -249,10 +282,6 @@ img.scale {
 
   #header-view h1 {
     line-height: 1.2em;
-  }
-
-  #page-view {
-    padding: 60px 0 60px 0;
   }
 
   #page-view .story-container h2 {
@@ -320,5 +349,11 @@ img.scale {
 
   #page-view .platform h1 {
     padding: 0 20px;
+  }
+
+  #page-view .contact-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 540px;
   }
 }
