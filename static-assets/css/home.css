@@ -107,7 +107,7 @@ a:visited {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* PAGE VIEW */
@@ -223,8 +223,8 @@ a:visited {
   padding: 68px 0 86px 0;
   text-align: center;
   color: #FFF;
-  background-color: #0b212c;
-  background-image: url("../../static-assets/images/contours.jpg");
+  background-color: #002a3a;
+  background-image: url("../../static-assets/images/contour_pattern.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
